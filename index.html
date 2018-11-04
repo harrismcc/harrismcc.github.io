@@ -187,28 +187,13 @@
 			box-shadow: 0 0 2px 2px lightgrey;
 			padding: 30px;
 		}
-		img
-		{
-    			max-width: 100%;
-   			 max-height: 100%;
-   			 display: block;
-   			 margin: auto auto;
-		}
-
-		.outer
-		{
-   			 border: 1px solid #888;
-   			 width: 100px;
-   			 height: 100px;
-		}
-
-		.inner
-			{
-  			  display:table-cell;
-  			  height: 100px;
-  			  width: 100px;
-   			 vertical-align: middle;
-		}
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+	
 
 	</style>
 
@@ -240,7 +225,8 @@
 						<img src="https://avatars1.githubusercontent.com/u/740503?v&#x3D;4" width=200 class="profile-pic img-responsive center-block">
 						<h1>Harris McCullers</h1>
 						<h2>CA</h2>
-						<h3>A Pitzer College student studying Computer Science at Harvey Mudd. Currently learning C++, but already competent in Python, Java, and more.</h3>
+						<h3>A Pitzer College student studying Computer Science at Harvey Mudd. Currently learning C++, but already competent in Python, Java, and more.
+            </h3>
 
 						<div class="text-center" style="margin:20px">
 							<a href="mailto:harrismccullers@gmail.com" class="" target="_blank">
@@ -251,7 +237,7 @@
 				</div>
 
 				<div class="bottom-cta hidden-sm hidden-md hidden-lg text-center">
-					<div class="btn btn-success">Get in touch</div>
+					<div class="btn btn-success" href="mailto:harrismccullers@gmail.com">Get in touch</div>
 				</div>
 
 
@@ -261,11 +247,9 @@
 
 					<div class="row work-item-row">
 							<div class="col-sm-8 col-sm-offset-2 project">
-								<div class="outer">
-    									<div class="inner">
-										<img src="https://raw.githubusercontent.com/harrismcc/SeamCarving/master/ExamplePhotos/OkinawaSeam.bmp" class="img-responsive">
-									</div>
-								</div>
+								
+								<img src="https://raw.githubusercontent.com/harrismcc/SeamCarving/master/ExamplePhotos/OkinawaSeam.bmp" class="center">
+								
 								<h2 class="text-center"><a href="html_url" target="blank">SeamCarving</a></h2>
 								<p></p>
 
@@ -337,7 +321,9 @@
 					<div class="row row-footer text-center">
 						<div class="col">
 							<div style="margin:50px;">
-								<h3> style="margin:50px 0 15px">I'm available for work, get in touch</h3>
+								<h3 style="margin:50px 0 15px"> I'm available for work, <a href="mailto:harrismccullers@gmail.com" class="" target="_blank">
+                  get in touch!
+                </a></h3>
 							</div>
 						</div>
 					</div>
