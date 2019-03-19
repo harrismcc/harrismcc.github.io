@@ -1,0 +1,7 @@
+<Response>
+<Say voice="alice">Hello. This is an automated message. Please allow students access to parking permits, as there is abundant room in the parking areas to do so.
+It is apparent when speaking even to campus security that Pitzer is not allowing students to park, even though all other colleges are. This call will repeat every
+60 minutes.</Say>
+
+<Play>http://demo.twilio.com/docs/classic.mp3</Play>
+</Response>
