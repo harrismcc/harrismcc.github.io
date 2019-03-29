@@ -225,7 +225,13 @@
 								<img src="https://raw.githubusercontent.com/harrismcc/SeamCarving/master/ExamplePhotos/OkinawaSeam.bmp" class="center">
 								
                                 <h2 class="text-center"><a href="html_url" target="blank">SeamCarving</a></h2>
-                                <p>A program for intelligently scaling images without losing visual information.</p>
+                                <p>Seam carving, as outlined in <a href="http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html"> this paper</a>, 
+																	is a process by which the proportions of an image can be changed without cropping or 
+																	squishing/stretching. The algorythm works by finding a connected line of pixels, 
+																	called a seam, that travels along an area of the image deemed least important. This 
+																	is detirmined by the amount of difference each pixel has to its neighbors. Pixels 
+																	that "won't be missed" are removed from the image in order to preserve the important
+																	 parts but still shrink the image.</p>
 								<p></p>
 
 								<div class="row text-center">
@@ -238,13 +244,40 @@
 								</div>
 							</div>
 					</div>
+
+					<div class="row work-item-row">
+							<div class="col-sm-8 col-sm-offset-2 project">
+								
+								<img src="https://raw.githubusercontent.com/harrismcc/Visualize_Julia_Sets/master/Animation1/JuliaSetThree.gif" width="100%" height="100%">
+	
+								<h2 class="text-center"><a href="html_url" target="blank">Visualize Julia Sets</a>
+									<IMG SRC=https://web.archive.org/web/20090902165139im_/http://geocities.com/japancomputerscience/ani-new02.gif></h2>
+								<p>Julia sets are fractals of imaginary numbers iterated n number of times according to the following equation: z = z^2 + c where z and c are imaginary numbers.
+									 By plotting the real and imaginary parts of these numbers the sets can be visualized. By changing the starting value of the imaginary number different Julia 
+									 sets can be represented.
+																</p>
+	
+								<div class="row text-center">
+									<div class="col-xs-12">
+											<i class="devicon-python-plain-wordmark colored"></i>
+									</div>
+								</div>
+								<div class="row text-center" style="margin:20px;">
+										<a class="btn btn-launch" href="https://github.com/harrismcc/Visualize_Julia_Sets" target="blank">Go</a>
+								</div>
+							</div>
+					</div>
+
 					<div class="row work-item-row">
 							<div class="col-sm-8 col-sm-offset-2 project">
 								
 								<img src="https://i.imgur.com/VS1hfvS.png" class="img-responsive">
 
 								<h2 class="text-center"><a href="html_url" target="blank">Markov Model</a></h2>
-								<p>My implementation of the Markov Model (for machine learning and writing)</p>
+								<p>In this project the goal was to use a Markov Model in order to generate text that looks and reads
+									 like real human writing. By accepting a large amount of sample text as input, this program can 
+									 accuratly create writing that is highly similar. Although it cannot generate new meaning in the writing, 
+									 it is able to emulate style and grammar.</p>
 
 								<div class="row text-center">
 									<div class="col-xs-12">
@@ -262,7 +295,14 @@
                                 				<img src="https://i.imgur.com/Is86c7P.png" class="img-responsive">
 
 								<h2 class="text-center"><a href="html_url" target="blank">Huffman-Compression</a></h2>
-								<p>An implementation of an algorithm for lossless compression</p>
+								<p>Huffman compression is a method of lossless data compression. Developed by David Huffman in the paper 
+									"A Method for the Construction of Minimum-Redundancy Codes"
+
+										My code essentially works by building a recursive tree based on the frequency of the letters as they appear 
+										in the origional text. I then encode that tree as binary. e.g. the "left" move is a one and the "right"
+										 move is a zero. Thus if the route to the letter "S" is left, right, right; then the binary string for 
+										 that letter will be 100. The code then applies this to all letters to create one long binary string. 
+										 This string is then broken up into pieces of size 8 and made into unicode charicters</p>
 
 								<div class="row text-center">
 									<div class="col-xs-12">
@@ -279,7 +319,11 @@
 
                             <img src="https://i.imgur.com/9r2fSVt.png" class="img-responsive">
                             <h2 class="text-center"><a href="html_url" target="blank">BST_SpellCheck</a></h2>
-                            <p>An implementation of a spell checker using binary search trees (C++)</p>
+                            <p>In this project, the goal was to create a program in C++ that could check for spelling errors 
+															in a string and return a list of suggestions. This was to be done using a randomized BST to store 
+															the dictionary of correct words, which was the first part of the project. The second part was actually 
+															using that to implement a spell checker, which is done using an abstraction of the dictionary called 
+															SpellCheck and some global methods.</p>
 
                             <div class="row text-center">
                                 <div class="col-xs-12">
@@ -314,28 +358,7 @@
 					</div>
 					
 
-					<div class="row work-item-row">
-						<div class="col-sm-8 col-sm-offset-2 project">
-							
-							<img src="https://raw.githubusercontent.com/harrismcc/Visualize_Julia_Sets/master/Animation1/JuliaSetThree.gif" width="100%" height="100%">
 
-							<h2 class="text-center"><a href="html_url" target="blank">Visualize Julia Sets</a>
-								<IMG SRC=https://web.archive.org/web/20090902165139im_/http://geocities.com/japancomputerscience/ani-new02.gif></h2>
-							<p>Julia sets are fractals of imaginary numbers iterated n number of times according to the following equation: z = z^2 + c where z and c are imaginary numbers.
-								 By plotting the real and imaginary parts of these numbers the sets can be visualized. By changing the starting value of the imaginary number different Julia 
-								 sets can be represented.
-															</p>
-
-							<div class="row text-center">
-								<div class="col-xs-12">
-										<i class="devicon-python-plain-wordmark colored"></i>
-								</div>
-							</div>
-							<div class="row text-center" style="margin:20px;">
-									<a class="btn btn-launch" href="https://github.com/harrismcc/Visualize_Julia_Sets" target="blank">Go</a>
-							</div>
-						</div>
-				</div>
 
 
 					<div class="row row-footer text-center">
