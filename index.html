@@ -64,17 +64,23 @@
 			color:#4A4E69 !important;
 			font-weight: 300;
 			font-family: 'Open Sans', sans-serif;
+			
+ 
+			
 		}
 		p {
 			color: #4A4E69;
 			font-weight: 300;
 			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			text-align: justify;
+  		text-justify: inter-word;
 		}
 		.main-container {
 			padding-top:50px;
 		}
 		.about-me h1 {
-			font-size:24px;
+			font-size:30px;
 		}
 		.about-me h2 {
 			font-size:20px;
@@ -146,13 +152,15 @@
 			color:white;
 			box-shadow: 0px 2px 5px 1px darkgrey;
 		}
-        .btn-connect {
-            width:100%;
+    .btn-connect {
+      width:100%;
 			max-width:200px;
 			background-color: #39A0ED;
 			color:white;
 			box-shadow: 0px 2px 5px 1px darkgrey;
-        }
+			font-weight: 800;
+			font-family: 'Open Sans', sans-serif;
+    }
 		.btn-launch:hover,
 		.btn-launch:focus {
 			color: white;
@@ -160,7 +168,7 @@
 		}
 		.strong_head {
 			font-size:40px;
-			padding: 30px;
+			padding: 20px;
 			
 		}
 		.about-side {
@@ -178,12 +186,33 @@
 			box-shadow: 0 0 2px 2px lightgrey;
 			padding: 30px;
 		}
+		.btn-outline{
+			font-size: 15px;
+			color: #000;
+			background-color: transparent;
+			border: 1px solid #000;
+			padding: 10px;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 5px;
+			margin-top: 5px;
+		}
+	
     .center {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 75%;
     }
+		hr {
+    display: block;
+    height: 2px;
+    border: 10px;
+    border-top: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 10px;
+		width: 70%;
+}
 	
 	</style>
 
@@ -196,6 +225,9 @@
 
 			<div class="row">
 
+				
+
+
 				<!-- side content -->
 				<div class="col-sm-3 about-me about-side text-center hidden-xs">
 						<img src="https://avatars1.githubusercontent.com/u/740503?v&#x3D;4" width=200 class="profile-pic img-responsive center-block">
@@ -204,9 +236,10 @@
 						<h3>I'm a Pitzer College student studying Computer Science at Harvey Mudd College. As a talented coder, skilled communicator, and proven leader, I am a great addition to any team. </h3>
 
                         <div class="text-center" style="margin:20px">
-                            <a class="btn btn-connect" href="https://github.com/harrismcc" target="blank">GitHub</a>
-                            <p></p>
-                            <a class="btn btn-connect" href="https://harrismcc.github.io/personal/resume.pdf" target="blank">Resume</a>
+                            <a class="btn btn-outline" href="https://github.com/harrismcc" target="blank">GitHub</a>
+														
+														
+                            <a class="btn btn-outline" href="https://harrismcc.github.io/personal/resume.pdf" target="blank">Resume</a>
 			    <p></p>			
 						</div>
 				</div>
@@ -218,10 +251,9 @@
 						<h3>I'm a Pitzer College student studying Computer Science at Harvey Mudd College. As a talented coder, skilled communicator, and proven leader, I am a great addition to any team. 
             </h3>
 
-						<a class="btn btn-connect" href="https://github.com/harrismcc" target="blank">GitHub</a>
-                           			 <p></p>
-                            			<a class="btn btn-connect" href="https://docs.google.com/document/d/12m9q9Bu8bnTKmiHRHx78kaBkjiwmxZm5BpR-fZRZy8s/edit?usp=sharing" target="blank">Resume</a>
-						<p></p>
+														<a class="btn btn-outline" href="https://github.com/harrismcc" target="blank">GitHub</a>
+														<a class="btn btn-outline" href="https://harrismcc.github.io/personal/resume.pdf" target="blank">Resume</a>
+														<p></p>
 				</div>
 
 				
@@ -243,7 +275,7 @@
 
 						</div>
 				</div>
-
+				<hr/>
 					<strong class="strong_head text-center col-sm-8 col-sm-offset-2">Projects</strong>
 
 					<div class="row work-item-row">
