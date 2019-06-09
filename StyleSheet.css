@@ -28,6 +28,11 @@ p {
     text-align: justify;
   text-justify: inter-word;
 }
+.code{
+    background-color: gray;
+    color: blue;
+    text-align: center;
+}
 .main-container {
     padding-top:50px;
     
