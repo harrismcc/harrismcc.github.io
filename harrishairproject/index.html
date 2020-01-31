@@ -9,6 +9,11 @@
                 margin-bottom: 0px;
                 margin-left: 0px;
               }
+              .tv{
+                position: absolute;
+                pointer-events:none;
+                background:none !important;
+              }
         </style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135754439-1"></script>
@@ -22,13 +27,16 @@
 
         <Title>Harris Hair Project</Title>
     </head>
+
+
     <body>
         <div style="background: black">
+            <img id="tv-image" class="tv" src="tv1.png"></img>
             <iframe id="myvideo" width="1120" height="630" src="https://www.youtube.com/embed/r-ton_iXXKY?controls=0&autoplay=1 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <script>
 
-            var videoArray = Array("r-ton_iXXKY", "cBg2d2yJVrY", "ZlBHjuv__4I", "xQPDjtr_XTE","Rm8v-p2AG0g")
+            var videoArray = Array("r-ton_iXXKY", "cBg2d2yJVrY", "ZlBHjuv__4I", "xQPDjtr_XTE","Rm8v-p2AG0g", "DkK1t5I5e48", "sRZ7FxgGqkU", "sRZ7FxgGqkU", "ferbU_zJix8", "Pm6SM8u5WJc")
             var prefix = "https://www.youtube.com/embed/"
             var suffix = "?controls=0&autoplay=1&rel=0&amp;fs=0&amp;showinfo=0"
 
@@ -37,15 +45,20 @@
             console.log(prefix + item + suffix)
             document.getElementById("myvideo").src = prefix + item + suffix;
 
-            
-
             //set correct size
             var height = window.innerHeight;
             var width = window.innerWidth;
 
             //assign size to window
-            document.getElementById("myvideo").width = width;
-            document.getElementById("myvideo").height = height;
+
+            document.getElementById("tv-image").width = width;
+            document.getElementById("tv-image").height = height;
+
+            document.getElementById("myvideo").width = (width/5)*4;
+            document.getElementById("myvideo").height = document.getElementById("tv-image").height;
+
+
+            
         </script>
         
     </body>
